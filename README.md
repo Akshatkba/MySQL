@@ -35,8 +35,17 @@ My sql is case-insensitive language
 
 here, string can be of the following forms:
 `"%str"`: matches suffix (strings ending with 'str')
+
 `"str%"`: matches prefix (strings starting with 'str')
+
 `"%str%"`: finds values having 'str' in any position
+
 `"_s"`: values having s in the second position
+
 `"s_"`: values having second last substring 's'
+
 `"a%b"`: starts with a and ends with b
+
+- Combining Query filters:
+``` SELECT * FROM ACTORS WHERE CHARGES >=35000 AND ID<4```
+queries can be combined using `AND, OR, NOT`
