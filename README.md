@@ -23,3 +23,20 @@ My sql is case-insensitive language
 - String: `CHAR, VARCHAR, ENUM`, etc
 - Datetime: `DATE, TIME, DATETIME`
 - `JSON`
+
+- Select
+``` SELECT * FROM <TABLE_NAME> WHERE <CONDITION> ```
+
+- Operators
+` > , < , >= , <= , != , <>(not equals) , =(equals) , IN , LIKE, etc `
+
+- Like
+```SELECT COL1, COL2, .. FROM <TABLE_NAME> WHERE <TARGET_COLUMN_TO_PERFORM_CONDITION_ON> LIKE "STRING" ```
+
+here, string can be of the following forms:
+`"%str"`: matches suffix (strings ending with 'str')
+`"str%"`: matches prefix (strings starting with 'str')
+`"%str%"`: finds values having 'str' in any position
+`"_s"`: values having s in the second position
+`"s_"`: values having second last substring 's'
+`"a%b"`: starts with a and ends with b
