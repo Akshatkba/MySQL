@@ -19,7 +19,7 @@ My sql is case-insensitive language
 ``` DESCRIBE <TABLE_NAME>```
 
 ### Data Types
-- Numeric: INT, DECIMAL, BIGINT, etc
-- String: CHAR, VARCHAR, ENUM, etc
-- Datetime: DATE, TIME, DATETIME
-- JSON
+- Numeric: `INT, DECIMAL, BIGINT`, etc
+- String: `CHAR, VARCHAR, ENUM`, etc
+- Datetime: `DATE, TIME, DATETIME`
+- `JSON`
