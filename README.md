@@ -68,3 +68,18 @@ here, string can be of the following forms:
 SELECT * FROM ACTORS WHERE CHARGES >=35000 AND ID<4
 ```
 queries can be combined using `AND, OR, NOT`
+
+- OrderBy
+```
+select col1, col2 ... from <table_name> ORDERBY <colA> <asc or desc>, <colB> <asc or desc>;
+```
+if two entries in colA have same values then it orders by the colB in their respective orders defined.
+
+- Limit: used to show a smaller chunk of the record
+```
+select col1, col2 ... from <table_name> LIMIT 5 OFFSET 2;
+```
+the above query divides the records into chunks of 5 each and fetches the third (0-based) chunk using offset query.
+```
+
+- 
