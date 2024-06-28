@@ -4,19 +4,29 @@ My sql is case-insensitive language
 ## My sql commands
 
  - Delete the whole database
- ```DROP DATABASE ```
+ ```
+ DROP DATABASE 
+ ```
 
  - List all databases
-```SHOW TABLES```
+```
+SHOW TABLES
+```
 
  - Create Table
- ``` CREATE TABLE <NAME> (<ATTRIBUTE_1_NAME> <ATTRIBUTE_1_TYPE, <ATTRIBUTE_2_NAME> <ATTRIBUTE_3_TYPE ...>) ```
+ ``` 
+ CREATE TABLE <NAME> (<ATTRIBUTE_1_NAME> <ATTRIBUTE_1_TYPE, <ATTRIBUTE_2_NAME> <ATTRIBUTE_3_TYPE ...>) 
+ ```
 
  - Drop tables
-```DROP TABLE <TABLE_NAME>```
+```
+DROP TABLE <TABLE_NAME>
+```
 
  - Get details about a table and its attributes
-``` DESCRIBE <TABLE_NAME>```
+``` 
+DESCRIBE <TABLE_NAME>
+```
 
 ### Data Types
 - Numeric: `INT, DECIMAL, BIGINT`, etc
@@ -25,15 +35,22 @@ My sql is case-insensitive language
 - `JSON`
 
 - Select
-``` SELECT * FROM <TABLE_NAME> WHERE <CONDITION> ```
+``` 
+SELECT * FROM <TABLE_NAME> WHERE <CONDITION> 
+```
 
 - Operators
-` > , < , >= , <= , != , <>(not equals) , =(equals) , IN , LIKE, etc `
+```
+> , < , >= , <= , != , <>(not equals) , =(equals) , IN , LIKE, etc 
+```
 
 - Like
-```SELECT COL1, COL2, .. FROM <TABLE_NAME> WHERE <TARGET_COLUMN_TO_PERFORM_CONDITION_ON> LIKE "STRING" ```
+```
+SELECT COL1, COL2, .. FROM <TABLE_NAME> WHERE <TARGET_COLUMN_TO_PERFORM_CONDITION_ON> LIKE "STRING" 
+```
 
 here, string can be of the following forms:
+
 `"%str"`: matches suffix (strings ending with 'str')
 
 `"str%"`: matches prefix (strings starting with 'str')
@@ -47,5 +64,7 @@ here, string can be of the following forms:
 `"a%b"`: starts with a and ends with b
 
 - Combining Query filters:
-``` SELECT * FROM ACTORS WHERE CHARGES >=35000 AND ID<4```
+``` 
+SELECT * FROM ACTORS WHERE CHARGES >=35000 AND ID<4
+```
 queries can be combined using `AND, OR, NOT`
