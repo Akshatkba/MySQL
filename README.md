@@ -40,9 +40,8 @@ SELECT * FROM <TABLE_NAME> WHERE <CONDITION>
 ```
 
 - Operators
-```
-> , < , >= , <= , != , <>(not equals) , =(equals) , IN , LIKE, etc 
-```
+
+```> , < , >= , <= , != , <>(not equals) , =(equals) , IN , LIKE, etc```
 
 - Like
 ```
@@ -80,6 +79,8 @@ if two entries in colA have same values then it orders by the colB in their resp
 select col1, col2 ... from <table_name> LIMIT 5 OFFSET 2;
 ```
 the above query divides the records into chunks of 5 each and fetches the third (0-based) chunk using offset query.
-```
 
-- 
+- update a record:
+```
+update <table> SET <column> = <value> where <condition>
+```
